@@ -4,7 +4,7 @@ import java.time.LocalDateTime
 import javax.persistence.*
 
 @Entity
-class Article(
+data class Article(
 		var title: String,
 		var headline: String,
 		var content: String,
@@ -14,7 +14,7 @@ class Article(
 		@Id @GeneratedValue var id: Long? = null)
 
 @Entity
-class User(
+data class User(
 		var login: String,
 		var firstname: String,
 		var lastname: String,
